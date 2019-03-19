@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create New School Class</title>
+  </head>
+  <body>
+    <label><h1>School Class Form</h1></label>
+    <%= form_for(@school_class) do |f| %>
+      <h3><%= f.label :title %></h3>
+      <%= f.text_field :title %>
+      <h3><%= f.label :room_number, "Room Number" %></h3>
+      <%= f.number_field :room_number, {step: '1'} %>
+      <p><%= f.submit "Create School class" %></p>
+    <% end %>
+  </body>
+</html>

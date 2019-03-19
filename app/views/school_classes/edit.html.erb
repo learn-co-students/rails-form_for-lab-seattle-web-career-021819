@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit School Class</title>
+  </head>
+  <body>
+    <h1>Update School Class</h1>
+    <%= form_for @school_class do |f| %>
+    <p><%= f.label :title %></p>
+    <p><%= f.text_field :title %></p>
+    <p><%= f.label :room_number %></p>
+    <p><%= f.number_field :room_number, {step: '1'} %></p>
+    <%= f.submit "Update School class" %>
+    <% end %>
+  </body>
+</html>

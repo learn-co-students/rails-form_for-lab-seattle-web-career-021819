@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Page</title>
+  </head>
+  <body>
+    <label><h1>Student Page</h1></label>
+    <h3><%= @student.to_s%></h3>
+    <%= link_to 'Edit', edit_student_path(@student.id) %>
+  </body>
+</html>
