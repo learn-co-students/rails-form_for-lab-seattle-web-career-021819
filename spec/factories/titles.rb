@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :school_class do
+  factory :title do
     
   end
 end
