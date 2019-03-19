@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create New Student</title>
+  </head>
+  <body>
+    <label><h1>New Student Form</h1></label>
+    <%= form_for(@student) do |f| %>
+      <h3><%= f.label :first_name, "First Name" %></h3>
+      <%= f.text_field :first_name %>
+      <h3><%= f.label :last_name, "Last Name" %></h3>
+      <%= f.text_field :last_name %>
+      <h3>Add Class Selection</h3>
+      <p><%= f.collection_select :school_class_id, SchoolClass.all, :id, :title%></p>
+      <p><%= f.submit "Create Student" %></p>
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index Page</title>
+  </head>
+  <body>
+    <label><h1>Students Page</h1></label>
+    <ul>
+      <% @students.each do |student| %>
+      <li><%= link_to student.to_s, student %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>

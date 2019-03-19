@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>School Class Page</title>
+  </head>
+  <body>
+    <label><h1>School Class Page</h1></label>
+    <h3><%= @school_class.title%></h3>
+    <h4><%= @school_class.room_number %></h4>
+    <%= link_to 'Edit', edit_school_class_path(@school_class.id) %>
+  </body>
+</html>
